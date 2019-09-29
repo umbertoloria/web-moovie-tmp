@@ -1,0 +1,92 @@
+#scheda #preview {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+#scheda #preview #cover {
+	width: 270px;
+	margin-right: 30px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 3px;
+	box-shadow: 0 0 20px 5px var(--shadows);
+}
+
+#scheda #preview header {
+	margin-bottom: 20px;
+}
+
+#scheda #preview .description {
+	width: 70%;
+}
+
+#scheda #preview .description p {
+	font-size: 1.1em;
+	line-height: 1.3em;
+	text-align: justify;
+	padding: 10px 0 10px 15px;
+	border-left: 3px solid var(--box_dark_bg);
+}
+
+#scheda .infoboxes {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr 1fr;
+}
+
+#scheda .infoboxes .infobox {
+	background: var(--box_bg);
+	box-shadow: 0 0 15px var(--shadows);
+	border-radius: 0 0 3px 3px;
+}
+
+#scheda .infoboxes .infobox header {
+	line-height: 40px;
+	padding: 0 20px;
+	background: var(--box_dark_bg);
+	border-radius: 3px 3px 0 0;
+}
+
+#scheda .infoboxes .infobox ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#scheda .infoboxes .infobox ul li {
+	list-style: none;
+	width: 150px;
+	margin: 10px;
+	background: var(--box_dark_bg);
+	box-shadow: 0 0 10px var(--shadows);
+	border-radius: 3px;
+	overflow: hidden;
+	transition: .3s;
+}
+
+#scheda .infoboxes .infobox ul li:hover {
+	transform: scale(0.95);
+}
+
+#scheda .infoboxes .infobox ul li a {
+	color: var(--text_color);
+	font-weight: normal;
+	font-size: .9em;
+	text-decoration: none;
+}
+
+#scheda .infoboxes .infobox ul li a img {
+	display: block;
+	margin: 0;
+	width: 150px;
+	height: 255px;
+	object-fit: cover;
+}
+
+#scheda .infoboxes .infobox ul li a span {
+	display: block;
+	line-height: 1.4em;
+	padding: 10px;
+}
